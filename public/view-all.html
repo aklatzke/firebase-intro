@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Firebase Examples</title>
+
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-database.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <img src="img/firebase.svg" alt="">
+        <h1>Firebase Examples</h1>
+    </div>
+
+    <div class="user-list">
+        <ul class="list">
+            <li class="template row">
+                    <div class="username col-12">
+                        Username:
+                        <span></span>
+                    </div>
+                    <div class="name col-6">
+                        Name:
+                        <span></span>
+                    </div>
+                    
+                    <div class="email col-6">
+                        Email:
+                        <span></span>
+                    </div>
+
+                    <div class="reason col-6">
+                        Reason:
+                        <span></span>
+                    </div>
+                    
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="edit col-6">
+                                <button class="btn btn-info btn-block btn-sm">
+                                    Edit User
+                                </button>
+                            </div>
+                            <div class="delete col-6">
+                                <button class='btn btn-danger btn-block btn-sm'>
+                                    Delete User
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='notes notes-row col-6'>
+                        Notes:
+                    </div>
+                    <div class="add-note col-6">
+                        <div class="row">
+                            <form class='note-form col-md-12'>
+                                <div class="row">
+                                    <div class="form-group col-md-8">
+                                        <input type="text" class='note form-control' name='note' placeholder="Add Note..." />
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <input type="submit" value="Save Note" class="btn btn-primary btn-sm" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <ul class='notes-list'>
+                            <li class="template row note-row">
+                                <div class='col-11 note-text'>
+
+                                </div>
+                                <div class="col-1">
+                                    <button class='note-delete btn btn-warning'>x</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+            </li>
+        </ul>
+
+        <div class="return-wrapper">
+            <a href="/" class="btn btn-primary btn-block">Return To Main Page</a>
+        </div>
+    </div>
+
+    <script src="js/setup.js"></script>
+    <script src="js/readingMultiple.js"></script>
+    <script src="js/deleteData.js"></script>
+    <script src="js/updateMultiple.js"></script>
+
+    <script src="js/subData/notes.js"></script>
+</body>
+
+</html>

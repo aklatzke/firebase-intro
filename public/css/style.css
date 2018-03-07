@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0091E1;
+    font-family: Roboto;
+}
+
+.wrapper{
+    padding-top: 40px;
+}
+
+.wrapper img{
+    margin: 0 auto;
+    display: block;
+    height: 100px;
+}
+
+.wrapper h1{
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    text-shadow: 1px 1px rgba(155, 155, 155, 1);
+}
+
+.form-wrapper{
+    width: 400px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 6px;
+    margin: 40px auto;
+    box-shadow: 0 2px 0px 0px #cdcdcd;
+}
+
+.form-wrapper h2{
+    text-align: center;
+    font-size: 24px;
+    color: #444;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.form-wrapper h3{
+    margin-top: 30px;
+    font-weight: 300;
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.edit-form{
+    display: none;
+}
+
+.btn{
+    font-weight: 300;
+}
+
+.name-wrapper{
+    display: none;
+}
+
+.view-all-wrapper{
+    display: none;
+}
+
+.template{
+    display: none;
+}
+
+.user-list{
+    width: 700px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 0px 0px #cdcdcd;
+}
+
+.user-list .list{
+    list-style-type: none;
+    padding: 40px;
+}
+
+
+.user-list .list .user:nth-child(2){
+    border-top: none;
+}
+
+.user-list .list .user:last-of-type{
+    border-bottom: none;
+}
+
+.user-list .list li .username{
+    display: block;
+    font-weight: normal;
+    background-color: rgba(0,0,0, .7);
+    margin-bottom: 10px;
+    color: white;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 4px;
+}
+
+.user-list .col-6{
+    padding-top: 6px;
+}
+
+.return-wrapper{
+    padding: 6px 20px;
+}
+
+.notes-row, 
+.add-note{
+    padding-top: 6px;
+    border-top: 1px solid rgba(0,0,0,.1);
+    margin-top: 6px;
+}
+
+.notes-row{
+    line-height: 33px;
+}
+
+.notes-list{
+    padding: 0;
+    list-style-type: none;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+.notes-list li{
+    padding: 4px 0px;
+}
+
+.note{
+    line-height: 0.5;
+}
+
+.note-row{
+    width: 100%;
+}
+
+.note-row .note-delete{
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 0px;
+    padding: 0px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+}

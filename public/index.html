@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Firebase Examples</title>
+
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-database.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">  
+        <img src="img/firebase.svg" alt="">
+        <h1>Firebase Examples</h1>
+    </div>
+
+    <div class='form-wrapper'>
+        <div class="name-wrapper">
+            <h2></h2>
+            <button class="create-new btn btn-warning btn-block">Create New User</button>
+        </div>
+
+        <form class='add-form'>
+            <div class="form-group">
+                <label for="username">User Name</label>
+                <input type="text" name="username" class='form-control' />
+            </div>
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" class='form-control' />
+            </div>
+
+            <div class="form-group">
+                <label for="name">Email</label>
+                <input type="text" name="email" class='form-control' />
+            </div>
+
+            <div class="form-group">
+                <label for="name">Reason</label>
+                <input type="text" name="reason" class='form-control' />
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit" class='btn btn-primary btn-block' />
+            </div>
+        </form>
+
+        <form class='edit-form'>
+            <h3>Edit Your Data</h3>
+
+            <div class="form-group">
+                <label for="username">User Name</label>
+                <input type="text" name="username" class='form-control' />
+            </div>
+        
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" class='form-control' />
+            </div>
+        
+            <div class="form-group">
+                <label for="name">Email</label>
+                <input type="text" name="email" class='form-control' />
+            </div>
+        
+            <div class="form-group">
+                <label for="name">Reason</label>
+                <input type="text" name="reason" class='form-control' />
+            </div>
+        
+            <div class="form-group">
+                <input type="submit" value="Update" class='btn btn-primary btn-block' />
+            </div>
+        </form>
+
+        <div class='view-all-wrapper'>
+            <a href="/view-all.html" class='btn btn-info btn-block'>View All Users</a>            
+        </div>
+    </div>
+    
+    <script src="js/setup.js"></script>
+    <script src="js/writingData.js"></script>
+    <script src="js/readData.js"></script>
+    <script src="js/updatingData.js"></script>
+
+    <script src="js/newUser.js"></script>
+</body>
+</html>
